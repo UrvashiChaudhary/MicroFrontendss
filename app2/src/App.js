@@ -1,12 +1,10 @@
-import LocalButton from "./Button";
 import React from "react";
 
-const App = () => (
+const App = ({ count }) => (
   <div>
-    <h1>Webpack Remote Module</h1>
-    <h2>App 2</h2>
-    <LocalButton />
+    <h1>Counter: {count}</h1>
   </div>
 );
 
+App.defaultProps = { count: 0 }
 export default App;
